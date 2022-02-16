@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Регистрация</title>
+
+</head>
+
+<body>
+    {% include "html/header.html" %}
+
+    <form action="{% url 'user:index' %}?feature=sign_up" method="post">
+        {% csrf_token %}
+        <label><pre>Имя:               <input name="first_name" type="text" placeholder="Введите ваше имя"></pre></label>
+        <label><pre>Фамилия:           <input name="last_name" type="text" placeholder="Введите вашу фамилию"></pre></label>
+        <label><pre>Имя пользователя:  <input name="username" type="text" placeholder="Введите ваше имя пользователя"></pre></label>
+        <label><pre>Дата рождения:     <input name="birth" type="date" placeholder="Введите вашу дату рождения"></pre></label>
+
+        <label><pre>Электронная почта: <input name="email" type="email" placeholder="Введите вашу электронную почту"></pre></label>
+        <label><pre>Пароль:            <input name="password" type="password" placeholder="Введите пароль"></pre></label>
+        <label><pre>Повторите пароль:  <input name="password" type="password" placeholder="Введите пароль еще раз"></pre></label>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

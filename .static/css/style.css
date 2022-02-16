@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    height: 100px;
+    border-bottom: 2px solid rgb(52, 75, 175);
+    margin-bottom: 1em;
+    display: flex;
+}
+
+.user{
+    margin-left: auto;
+}
+
+.sign-up-button,
+.sign-in-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background: rgb(64, 165, 233);
+}
+
+.sign-up-button:hover,
+.sign-in-button:hover {
+    color: bisque;
+    background: rgb(26, 112, 192);
+}
+
+.separator {
+    margin: 20px;
+    border: 2px solid rgb(52, 75, 175);
+}
+
+.product-name {
+    margin: 23px;
+    margin-left: 0;
+    color: rgb(52, 75, 175);
+}

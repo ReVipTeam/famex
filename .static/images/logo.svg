@@ -1,0 +1,24 @@
+<svg id='logo' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'>
+    <defs>
+        <style>
+            .cls-1,
+            .cls-2 {
+                fill: none;
+                stroke-miterlimit: 10;
+            }
+            .cls-1 {
+                stroke: #5da5e9;
+                stroke-width: 15px;
+            }
+            .cls-2 {
+                stroke: #0078e9;
+                stroke-width: 5px;
+            }
+        </style>
+    </defs>
+    <circle class='cls-1' cx='128' cy='128' r='115' />
+    <line class='cls-1' x1='128' y1='12' x2='128' y2='248' />
+    <line class='cls-2' x1='200' y1='220' x2='128' y2='12' />
+    <line class='cls-2' x1='128' y1='12' x2='56' y2='220' />
+    <line class='cls-2' x1='170' y1='140' x2='84' y2='140' />
+</svg>

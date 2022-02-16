@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    {% include "html/header.html" %}
+    <h3>Авторизуйтесь для входа</h3>
+
+    <form action="{% url 'user:index' %}?feature=sign_in" class="reg-form" method="post">
+        {% csrf_token %}
+        <input name="email" type="text" placeholder="Электронная почта"><br>
+        <input name="password" type="password" placeholder="Пароль"><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

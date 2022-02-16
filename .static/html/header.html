@@ -1,0 +1,9 @@
+<header>
+    {% include "images/logo.svg" %}
+
+    <div class="separator"></div>
+    <div class='product-name'>Финансовый<br>ассистент</div>
+    <div class="user">
+        {% if user %} {{ user.username }} {% endif %}
+    </div>
+</header>

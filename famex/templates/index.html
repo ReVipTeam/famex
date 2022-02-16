@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include "html/header.html" %}
+    <h1 class="title">Финансовый ассистент</h1>
+    <a href="{% url 'auth:sign_up' %}" class="sign-up-button">Регистрация</a>
+    <a href="{% url 'auth:sign_in' %}" class="sign-in-button">Вход</a>
+</body>
+</html>
