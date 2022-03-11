@@ -15,22 +15,53 @@ header {
     margin-left: auto;
 }
 
-.sign-up-button,
-.sign-in-button {
+.sign-in-button-old {
     text-decoration: none;
     display: inline-block;
     padding: 15px 30px;
     margin: 10px 20px;
     border-radius: 10px;
-    color: white;
-    background: rgb(64, 165, 233);
+    transition-duration: 0.4s;
+    color: black;
+    background: rgb(0, 255, 21);
 }
 
-.sign-up-button:hover,
-.sign-in-button:hover {
-    color: bisque;
-    background: rgb(26, 112, 192);
+.sign-in-button-old:hover {
+    color: black;
+    background: rgb(123, 255, 0);
 }
+
+.sign-button {
+    min-width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+  
+  .sign-button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  .sign-button:active {
+    background-color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    color: #000;
+    transform: translateY(+3px);
+  }
 
 .separator {
     margin: 20px;
